@@ -112,7 +112,6 @@ def index_in_background(repo_url: str, is_local: bool = False):
         indexing_status["message"] = f"Successfully indexed {len(documents)} files ({chunk_count} chunks)"
         indexing_status["in_progress"] = False
         print(f"[INDEXING] Completed! {chunk_count} chunks indexed")
-
     except Exception as e:
         error_trace = traceback.format_exc()
         print(f"[INDEXING ERROR] {str(e)}")
