@@ -180,20 +180,28 @@ class VectorIndexer:
         ids = [f"{chunk['metadata']['repo_name']}::{chunk['metadata']['file_path']}::{i}"
                for i, chunk in enumerate(all_chunks)]
 
-        # Generate embeddings
-        embeddings = self._generate_embeddings(texts)
+        # Process in smaller batches to reduce memory usage
+        batch_size = 50  # Reduced from 100
+        total_batches = (len(texts) + batch_size - 1) // batch_size
 
-        # Add to ChromaDB
-        batch_size = 100
-        for i in range(0, len(texts), batch_size):
-            batch_end = min(i + batch_size, len(texts))
+        for batch_num in range(0, len(texts), batch_size):
+            batch_end = min(batch_num + batch_size, len(texts))
+            current_batch = (batch_num // batch_size) + 1
+
+            print(f"  Processing batch {current_batch}/{total_batches} ({batch_end}/{len(texts)} chunks)")
+
+            # Generate embeddings for this batch only
+            batch_texts = texts[batch_num:batch_end]
+            batch_embeddings = self._generate_embeddings(batch_texts)
+
+            # Add to ChromaDB
             self.collection.add(
-                embeddings=embeddings[i:batch_end],
-                documents=texts[i:batch_end],
-                metadatas=metadatas[i:batch_end],
-                ids=ids[i:batch_end],
+                embeddings=batch_embeddings,
+                documents=batch_texts,
+                metadatas=metadatas[batch_num:batch_end],
+                ids=ids[batch_num:batch_end],
             )
-            print(f"  Indexed {batch_end}/{len(texts)} chunks")
+            print(f"  ✓ Indexed {batch_end}/{len(texts)} chunks")
 
         print(f"Successfully indexed {len(all_chunks)} chunks")
         return len(all_chunks)
