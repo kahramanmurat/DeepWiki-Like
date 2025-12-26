@@ -1,9 +1,12 @@
+# Render configuration for PAID tier (persistent storage)
+# Use this if you upgrade to a paid plan ($7/month)
+
 services:
   - type: web
     name: deepwiki
     env: python
     region: oregon
-    plan: free
+    plan: starter  # $7/month - supports persistent disk
     buildCommand: pip install -r requirements.txt
     startCommand: python -m deepwiki serve --host 0.0.0.0 --port $PORT
     envVars:
@@ -17,3 +20,7 @@ services:
         value: openai
       - key: EMBEDDING_MODEL
         value: text-embedding-3-small
+    disk:
+      name: data
+      mountPath: /app/data
+      sizeGB: 1  # Persistent storage for ChromaDB

@@ -2,6 +2,23 @@
 
 Complete guide to deploying DeepWiki to the internet.
 
+## ⚠️ Important: Data Persistence
+
+**ChromaDB needs persistent storage** to keep your indexed documents between restarts.
+
+### Free Tier Limitations:
+- **Render Free**: ❌ No persistent disk - data lost on restart
+- **Railway Free**: ✅ Has persistent volumes
+- **Cloud Run Free**: ❌ Ephemeral storage only
+
+### Solutions:
+1. **Use Railway** ($5 free credit) - supports persistent volumes on free tier
+2. **Upgrade Render** to paid plan ($7/mo) - use `render-paid.yaml`
+3. **Re-index on restart** - Accept data loss on free tier (for testing only)
+4. **Use external storage** - Save ChromaDB to S3/GCS (requires code changes)
+
+**Recommendation for production**: Use Railway (free tier with persistence) or upgrade to paid tier on any platform.
+
 ## Deployment Options
 
 ### Option 1: Render (Recommended - Free Tier Available) ⭐
