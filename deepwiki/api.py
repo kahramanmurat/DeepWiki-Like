@@ -51,6 +51,16 @@ class StatsResponse(BaseModel):
     repositories: List[str]
 
 
+@app.get("/health")
+async def health_check():
+    """Health check endpoint for Railway."""
+    return {
+        "status": "healthy",
+        "indexing_in_progress": indexing_status["in_progress"],
+        "indexing_status": indexing_status["status"]
+    }
+
+
 @app.get("/")
 async def root():
     """Serve the web UI."""
@@ -88,19 +98,20 @@ def index_in_background(repo_url: str, is_local: bool = False):
             return
 
         indexing_status["status"] = "indexing"
-        indexing_status["message"] = f"Indexing {len(documents)} files..."
+        indexing_status["message"] = f"Indexing {len(documents)} files (generating embeddings)..."
         print(f"[INDEXING] Starting to index {len(documents)} documents...")
 
         # Index documents
+        print("[INDEXING] Initializing indexer...")
         indexer = VectorIndexer()
-        print("[INDEXING] Calling indexer.index_documents...")
+        print("[INDEXING] Starting indexer.index_documents...")
         chunk_count = indexer.index_documents(documents)
+        print(f"[INDEXING] indexer.index_documents completed, {chunk_count} chunks indexed")
 
         indexing_status["status"] = "completed"
         indexing_status["message"] = f"Successfully indexed {len(documents)} files ({chunk_count} chunks)"
         indexing_status["in_progress"] = False
         print(f"[INDEXING] Completed! {chunk_count} chunks indexed")
-
     except Exception as e:
         error_trace = traceback.format_exc()
         print(f"[INDEXING ERROR] {str(e)}")
