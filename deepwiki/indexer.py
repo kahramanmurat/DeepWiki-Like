@@ -164,47 +164,55 @@ class VectorIndexer:
         Returns:
             Number of chunks indexed
         """
-        all_chunks = []
+        print(f"Indexing {len(documents)} documents in streaming mode...")
 
-        print(f"Chunking {len(documents)} documents...")
-        for doc in documents:
+        total_chunks = 0
+        batch_size = 25  # Very small batches for low memory footprint
+        current_batch_chunks = []
+
+        # Process documents one at a time to minimize memory usage
+        for doc_idx, doc in enumerate(documents, 1):
+            print(f"  Processing document {doc_idx}/{len(documents)}: {doc.path}")
+
+            # Chunk this document
             chunks = self.chunker.chunk_document(doc)
-            all_chunks.extend(chunks)
+            print(f"    Created {len(chunks)} chunks")
 
-        print(f"Created {len(all_chunks)} chunks")
-        print("Generating embeddings and indexing...")
+            # Add chunks to current batch
+            current_batch_chunks.extend(chunks)
 
-        # Prepare data for ChromaDB
-        texts = [chunk["text"] for chunk in all_chunks]
-        metadatas = [chunk["metadata"] for chunk in all_chunks]
-        ids = [f"{chunk['metadata']['repo_name']}::{chunk['metadata']['file_path']}::{i}"
-               for i, chunk in enumerate(all_chunks)]
+            # Process batch when it reaches size limit or is last document
+            while len(current_batch_chunks) >= batch_size or (doc_idx == len(documents) and current_batch_chunks):
+                # Take next batch
+                batch = current_batch_chunks[:batch_size]
+                current_batch_chunks = current_batch_chunks[batch_size:]
 
-        # Process in smaller batches to reduce memory usage
-        batch_size = 50  # Reduced from 100
-        total_batches = (len(texts) + batch_size - 1) // batch_size
+                # Prepare batch data
+                texts = [chunk["text"] for chunk in batch]
+                metadatas = [chunk["metadata"] for chunk in batch]
+                ids = [f"{chunk['metadata']['repo_name']}::{chunk['metadata']['file_path']}::{total_chunks + i}"
+                       for i in range(len(batch))]
 
-        for batch_num in range(0, len(texts), batch_size):
-            batch_end = min(batch_num + batch_size, len(texts))
-            current_batch = (batch_num // batch_size) + 1
+                print(f"    Generating embeddings for {len(batch)} chunks...")
+                batch_embeddings = self._generate_embeddings(texts)
 
-            print(f"  Processing batch {current_batch}/{total_batches} ({batch_end}/{len(texts)} chunks)")
+                print(f"    Saving to database...")
+                self.collection.add(
+                    embeddings=batch_embeddings,
+                    documents=texts,
+                    metadatas=metadatas,
+                    ids=ids,
+                )
 
-            # Generate embeddings for this batch only
-            batch_texts = texts[batch_num:batch_end]
-            batch_embeddings = self._generate_embeddings(batch_texts)
+                total_chunks += len(batch)
+                print(f"    ✓ Indexed {total_chunks} total chunks so far")
 
-            # Add to ChromaDB
-            self.collection.add(
-                embeddings=batch_embeddings,
-                documents=batch_texts,
-                metadatas=metadatas[batch_num:batch_end],
-                ids=ids[batch_num:batch_end],
-            )
-            print(f"  ✓ Indexed {batch_end}/{len(texts)} chunks")
+                # Break if no more chunks to process
+                if not current_batch_chunks:
+                    break
 
-        print(f"Successfully indexed {len(all_chunks)} chunks")
-        return len(all_chunks)
+        print(f"Successfully indexed {total_chunks} chunks from {len(documents)} documents")
+        return total_chunks
 
     def _generate_embeddings(self, texts: List[str]) -> List[List[float]]:
         """Generate embeddings for texts using OpenAI.
@@ -215,8 +223,18 @@ class VectorIndexer:
         Returns:
             List of embedding vectors
         """
+        # For small batches (< 25), send all at once
+        # Otherwise, split into sub-batches
+        if len(texts) <= 25:
+            response = openai.embeddings.create(
+                model=config.EMBEDDING_MODEL,
+                input=texts,
+            )
+            return [item.embedding for item in response.data]
+
+        # For larger batches, process in sub-batches
         embeddings = []
-        batch_size = 100
+        batch_size = 25
 
         for i in range(0, len(texts), batch_size):
             batch = texts[i : i + batch_size]
