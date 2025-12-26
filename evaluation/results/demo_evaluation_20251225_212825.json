@@ -1,0 +1,2113 @@
+{
+  "timestamp": "2025-12-25T21:28:25.215834",
+  "test_cases_count": 12,
+  "prompts_count": 5,
+  "prompt_results": {
+    "baseline": {
+      "prompt_id": "baseline",
+      "prompt_name": "Baseline - Simple and Direct",
+      "system_prompt": "Mock system prompt for Baseline - Simple and Direct",
+      "test_results": [
+        {
+          "test_id": 1,
+          "question": "How do I use streaming with the SDK?",
+          "answer": "Mock answer for question 1",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 2,
+          "question": "What are the authentication methods?",
+          "answer": "Mock answer for question 2",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 3,
+          "question": "How do I handle rate limits?",
+          "answer": "Mock answer for question 3",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 4,
+          "question": "What topics are covered in the MCP module?",
+          "answer": "Mock answer for question 4",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 5,
+          "question": "What are the homework requirements for week 1?",
+          "answer": "Mock answer for question 5",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 6,
+          "question": "Can I use this SDK with async/await?",
+          "answer": "Mock answer for question 6",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 7,
+          "question": "How do I set up the development environment?",
+          "answer": "Mock answer for question 7",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 8,
+          "question": "What models are available?",
+          "answer": "Mock answer for question 8",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 9,
+          "question": "What's the difference between modules?",
+          "answer": "Mock answer for question 9",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 10,
+          "question": "How do I handle errors and exceptions?",
+          "answer": "Mock answer for question 10",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 11,
+          "question": "Are there any prerequisites for this course?",
+          "answer": "Mock answer for question 11",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 12,
+          "question": "Can I customize the temperature and max tokens?",
+          "answer": "Mock answer for question 12",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        }
+      ],
+      "aggregate_scores": {
+        "overall_mean": 7.56,
+        "overall_min": 6.359999999999999,
+        "overall_max": 8.36,
+        "relevance_mean": 7.8,
+        "completeness_mean": 7.2,
+        "accuracy_mean": 8.1,
+        "clarity_mean": 7.9,
+        "citation_quality_mean": 7.3
+      }
+    },
+    "detailed": {
+      "prompt_id": "detailed",
+      "prompt_name": "Detailed - Comprehensive Answers",
+      "system_prompt": "Mock system prompt for Detailed - Comprehensive Answers",
+      "test_results": [
+        {
+          "test_id": 1,
+          "question": "How do I use streaming with the SDK?",
+          "answer": "Mock answer for question 1",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 2,
+          "question": "What are the authentication methods?",
+          "answer": "Mock answer for question 2",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 3,
+          "question": "How do I handle rate limits?",
+          "answer": "Mock answer for question 3",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 4,
+          "question": "What topics are covered in the MCP module?",
+          "answer": "Mock answer for question 4",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 5,
+          "question": "What are the homework requirements for week 1?",
+          "answer": "Mock answer for question 5",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 6,
+          "question": "Can I use this SDK with async/await?",
+          "answer": "Mock answer for question 6",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 7,
+          "question": "How do I set up the development environment?",
+          "answer": "Mock answer for question 7",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 8,
+          "question": "What models are available?",
+          "answer": "Mock answer for question 8",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 9,
+          "question": "What's the difference between modules?",
+          "answer": "Mock answer for question 9",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 10,
+          "question": "How do I handle errors and exceptions?",
+          "answer": "Mock answer for question 10",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 11,
+          "question": "Are there any prerequisites for this course?",
+          "answer": "Mock answer for question 11",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 12,
+          "question": "Can I customize the temperature and max tokens?",
+          "answer": "Mock answer for question 12",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        }
+      ],
+      "aggregate_scores": {
+        "overall_mean": 8.23,
+        "overall_min": 7.03,
+        "overall_max": 9.030000000000001,
+        "relevance_mean": 8.5,
+        "completeness_mean": 8.7,
+        "accuracy_mean": 8.4,
+        "clarity_mean": 7.8,
+        "citation_quality_mean": 7.8
+      }
+    },
+    "concise": {
+      "prompt_id": "concise",
+      "prompt_name": "Concise - Quick and Focused",
+      "system_prompt": "Mock system prompt for Concise - Quick and Focused",
+      "test_results": [
+        {
+          "test_id": 1,
+          "question": "How do I use streaming with the SDK?",
+          "answer": "Mock answer for question 1",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 2,
+          "question": "What are the authentication methods?",
+          "answer": "Mock answer for question 2",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 3,
+          "question": "How do I handle rate limits?",
+          "answer": "Mock answer for question 3",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 4,
+          "question": "What topics are covered in the MCP module?",
+          "answer": "Mock answer for question 4",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 5,
+          "question": "What are the homework requirements for week 1?",
+          "answer": "Mock answer for question 5",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 6,
+          "question": "Can I use this SDK with async/await?",
+          "answer": "Mock answer for question 6",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 7,
+          "question": "How do I set up the development environment?",
+          "answer": "Mock answer for question 7",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 8,
+          "question": "What models are available?",
+          "answer": "Mock answer for question 8",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 9,
+          "question": "What's the difference between modules?",
+          "answer": "Mock answer for question 9",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 10,
+          "question": "How do I handle errors and exceptions?",
+          "answer": "Mock answer for question 10",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 11,
+          "question": "Are there any prerequisites for this course?",
+          "answer": "Mock answer for question 11",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 12,
+          "question": "Can I customize the temperature and max tokens?",
+          "answer": "Mock answer for question 12",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        }
+      ],
+      "aggregate_scores": {
+        "overall_mean": 7.12,
+        "overall_min": 5.92,
+        "overall_max": 7.92,
+        "relevance_mean": 7.5,
+        "completeness_mean": 6.2,
+        "accuracy_mean": 7.8,
+        "clarity_mean": 8.1,
+        "citation_quality_mean": 7.0
+      }
+    },
+    "educational": {
+      "prompt_id": "educational",
+      "prompt_name": "Educational - Teaching-Oriented",
+      "system_prompt": "Mock system prompt for Educational - Teaching-Oriented",
+      "test_results": [
+        {
+          "test_id": 1,
+          "question": "How do I use streaming with the SDK?",
+          "answer": "Mock answer for question 1",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 2,
+          "question": "What are the authentication methods?",
+          "answer": "Mock answer for question 2",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 3,
+          "question": "How do I handle rate limits?",
+          "answer": "Mock answer for question 3",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 4,
+          "question": "What topics are covered in the MCP module?",
+          "answer": "Mock answer for question 4",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 5,
+          "question": "What are the homework requirements for week 1?",
+          "answer": "Mock answer for question 5",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 6,
+          "question": "Can I use this SDK with async/await?",
+          "answer": "Mock answer for question 6",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 7,
+          "question": "How do I set up the development environment?",
+          "answer": "Mock answer for question 7",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 8,
+          "question": "What models are available?",
+          "answer": "Mock answer for question 8",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 9,
+          "question": "What's the difference between modules?",
+          "answer": "Mock answer for question 9",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 10,
+          "question": "How do I handle errors and exceptions?",
+          "answer": "Mock answer for question 10",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 11,
+          "question": "Are there any prerequisites for this course?",
+          "answer": "Mock answer for question 11",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 12,
+          "question": "Can I customize the temperature and max tokens?",
+          "answer": "Mock answer for question 12",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        }
+      ],
+      "aggregate_scores": {
+        "overall_mean": 7.98,
+        "overall_min": 6.78,
+        "overall_max": 8.780000000000001,
+        "relevance_mean": 8.2,
+        "completeness_mean": 8.4,
+        "accuracy_mean": 7.9,
+        "clarity_mean": 8.3,
+        "citation_quality_mean": 7.1
+      }
+    },
+    "technical": {
+      "prompt_id": "technical",
+      "prompt_name": "Technical - Developer-Focused",
+      "system_prompt": "Mock system prompt for Technical - Developer-Focused",
+      "test_results": [
+        {
+          "test_id": 1,
+          "question": "How do I use streaming with the SDK?",
+          "answer": "Mock answer for question 1",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 2,
+          "question": "What are the authentication methods?",
+          "answer": "Mock answer for question 2",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 3,
+          "question": "How do I handle rate limits?",
+          "answer": "Mock answer for question 3",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 4,
+          "question": "What topics are covered in the MCP module?",
+          "answer": "Mock answer for question 4",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 5,
+          "question": "What are the homework requirements for week 1?",
+          "answer": "Mock answer for question 5",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 6,
+          "question": "Can I use this SDK with async/await?",
+          "answer": "Mock answer for question 6",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 7,
+          "question": "How do I set up the development environment?",
+          "answer": "Mock answer for question 7",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 8,
+          "question": "What models are available?",
+          "answer": "Mock answer for question 8",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 9,
+          "question": "What's the difference between modules?",
+          "answer": "Mock answer for question 9",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 10,
+          "question": "How do I handle errors and exceptions?",
+          "answer": "Mock answer for question 10",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 11,
+          "question": "Are there any prerequisites for this course?",
+          "answer": "Mock answer for question 11",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        },
+        {
+          "test_id": 12,
+          "question": "Can I customize the temperature and max tokens?",
+          "answer": "Mock answer for question 12",
+          "citations_count": 3,
+          "evaluation": {
+            "relevance": {
+              "score": 8,
+              "justification": "Directly addresses the question"
+            },
+            "completeness": {
+              "score": 7,
+              "justification": "Covers main points"
+            },
+            "accuracy": {
+              "score": 9,
+              "justification": "Information is correct"
+            },
+            "clarity": {
+              "score": 8,
+              "justification": "Well structured"
+            },
+            "citation_quality": {
+              "score": 7,
+              "justification": "Good source references"
+            },
+            "overall_score": 7.8,
+            "suggestions": [
+              "Add more code examples",
+              "Include edge cases"
+            ]
+          }
+        }
+      ],
+      "aggregate_scores": {
+        "overall_mean": 8.45,
+        "overall_min": 7.249999999999999,
+        "overall_max": 9.25,
+        "relevance_mean": 8.7,
+        "completeness_mean": 8.6,
+        "accuracy_mean": 8.9,
+        "clarity_mean": 8.5,
+        "citation_quality_mean": 7.6
+      }
+    }
+  },
+  "comparison": {
+    "rankings": [
+      {
+        "prompt_id": "technical",
+        "prompt_name": "Technical - Developer-Focused",
+        "overall_score": 8.45
+      },
+      {
+        "prompt_id": "detailed",
+        "prompt_name": "Detailed - Comprehensive Answers",
+        "overall_score": 8.23
+      },
+      {
+        "prompt_id": "educational",
+        "prompt_name": "Educational - Teaching-Oriented",
+        "overall_score": 7.98
+      },
+      {
+        "prompt_id": "baseline",
+        "prompt_name": "Baseline - Simple and Direct",
+        "overall_score": 7.56
+      },
+      {
+        "prompt_id": "concise",
+        "prompt_name": "Concise - Quick and Focused",
+        "overall_score": 7.12
+      }
+    ],
+    "best_prompt": {
+      "prompt_id": "technical",
+      "prompt_name": "Technical - Developer-Focused",
+      "overall_score": 8.45
+    },
+    "insights": [
+      "Best performing prompt: Technical - Developer-Focused (score: 8.45)",
+      "Score difference between best and worst: 1.33 points",
+      "Total prompts evaluated: 5",
+      "Technical prompts performed best for developer-focused documentation",
+      "Concise prompts scored lowest on completeness but highest on clarity"
+    ]
+  }
+}

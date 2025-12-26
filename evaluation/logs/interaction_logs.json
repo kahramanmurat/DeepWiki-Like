@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "timestamp": "2025-12-25T10:00:00Z",
+    "repository": "anthropics/anthropic-sdk-python",
+    "question": "How do I use streaming with the SDK?",
+    "expected_topics": ["streaming", "async", "API", "messages"],
+    "context": "User wants to implement real-time streaming responses"
+  },
+  {
+    "id": 2,
+    "timestamp": "2025-12-25T10:05:00Z",
+    "repository": "anthropics/anthropic-sdk-python",
+    "question": "What are the authentication methods?",
+    "expected_topics": ["API key", "authentication", "credentials", "setup"],
+    "context": "User needs to configure authentication"
+  },
+  {
+    "id": 3,
+    "timestamp": "2025-12-25T10:10:00Z",
+    "repository": "anthropics/anthropic-sdk-python",
+    "question": "How do I handle rate limits?",
+    "expected_topics": ["rate limiting", "retry", "backoff", "errors"],
+    "context": "User experiencing rate limit issues"
+  },
+  {
+    "id": 4,
+    "timestamp": "2025-12-25T10:15:00Z",
+    "repository": "DataTalksClub/ai-dev-tools-zoomcamp",
+    "question": "What topics are covered in the MCP module?",
+    "expected_topics": ["MCP", "Model Context Protocol", "module", "curriculum"],
+    "context": "Student exploring course content"
+  },
+  {
+    "id": 5,
+    "timestamp": "2025-12-25T10:20:00Z",
+    "repository": "DataTalksClub/ai-dev-tools-zoomcamp",
+    "question": "What are the homework requirements for week 1?",
+    "expected_topics": ["homework", "week 1", "overview", "requirements"],
+    "context": "Student checking assignments"
+  },
+  {
+    "id": 6,
+    "timestamp": "2025-12-25T10:25:00Z",
+    "repository": "anthropics/anthropic-sdk-python",
+    "question": "Can I use this SDK with async/await?",
+    "expected_topics": ["async", "await", "asynchronous", "concurrent"],
+    "context": "Developer wants async implementation"
+  },
+  {
+    "id": 7,
+    "timestamp": "2025-12-25T10:30:00Z",
+    "repository": "DataTalksClub/ai-dev-tools-zoomcamp",
+    "question": "How do I set up the development environment?",
+    "expected_topics": ["setup", "installation", "environment", "prerequisites"],
+    "context": "New student getting started"
+  },
+  {
+    "id": 8,
+    "timestamp": "2025-12-25T10:35:00Z",
+    "repository": "anthropics/anthropic-sdk-python",
+    "question": "What models are available?",
+    "expected_topics": ["models", "Claude", "versions", "capabilities"],
+    "context": "User selecting appropriate model"
+  },
+  {
+    "id": 9,
+    "timestamp": "2025-12-25T10:40:00Z",
+    "repository": "DataTalksClub/ai-dev-tools-zoomcamp",
+    "question": "What's the difference between the overview and end-to-end modules?",
+    "expected_topics": ["modules", "curriculum", "overview", "end-to-end"],
+    "context": "Student understanding course structure"
+  },
+  {
+    "id": 10,
+    "timestamp": "2025-12-25T10:45:00Z",
+    "repository": "anthropics/anthropic-sdk-python",
+    "question": "How do I handle errors and exceptions?",
+    "expected_topics": ["error handling", "exceptions", "try-catch", "debugging"],
+    "context": "Developer implementing robust error handling"
+  },
+  {
+    "id": 11,
+    "timestamp": "2025-12-25T10:50:00Z",
+    "repository": "DataTalksClub/ai-dev-tools-zoomcamp",
+    "question": "Are there any prerequisites for this course?",
+    "expected_topics": ["prerequisites", "requirements", "skills", "background"],
+    "context": "Prospective student evaluating course fit"
+  },
+  {
+    "id": 12,
+    "timestamp": "2025-12-25T10:55:00Z",
+    "repository": "anthropics/anthropic-sdk-python",
+    "question": "Can I customize the temperature and max tokens?",
+    "expected_topics": ["parameters", "temperature", "max_tokens", "configuration"],
+    "context": "User fine-tuning response generation"
+  }
+]
