@@ -1,0 +1,91 @@
+================================================================================
+DEEPWIKI EVALUATION REPORT (DEMO)
+================================================================================
+
+Generated: 2025-12-25T21:28:25.215834
+Test Cases: 12
+System Prompts: 5
+
+
+OVERALL RANKINGS
+--------------------------------------------------------------------------------
+1. Technical - Developer-Focused: 8.45
+2. Detailed - Comprehensive Answers: 8.23
+3. Educational - Teaching-Oriented: 7.98
+4. Baseline - Simple and Direct: 7.56
+5. Concise - Quick and Focused: 7.12
+
+
+KEY INSIGHTS
+--------------------------------------------------------------------------------
+• Best performing prompt: Technical - Developer-Focused (score: 8.45)
+• Score difference between best and worst: 1.33 points
+• Total prompts evaluated: 5
+• Technical prompts performed best for developer-focused documentation
+• Concise prompts scored lowest on completeness but highest on clarity
+
+
+
+PROMPT: Baseline - Simple and Direct
+================================================================================
+
+Aggregate Scores:
+  Overall:          7.56
+  Relevance:        7.80
+  Completeness:     7.20
+  Accuracy:         8.10
+  Clarity:          7.90
+  Citation Quality: 7.30
+
+
+
+PROMPT: Detailed - Comprehensive Answers
+================================================================================
+
+Aggregate Scores:
+  Overall:          8.23
+  Relevance:        8.50
+  Completeness:     8.70
+  Accuracy:         8.40
+  Clarity:          7.80
+  Citation Quality: 7.80
+
+
+
+PROMPT: Concise - Quick and Focused
+================================================================================
+
+Aggregate Scores:
+  Overall:          7.12
+  Relevance:        7.50
+  Completeness:     6.20
+  Accuracy:         7.80
+  Clarity:          8.10
+  Citation Quality: 7.00
+
+
+
+PROMPT: Educational - Teaching-Oriented
+================================================================================
+
+Aggregate Scores:
+  Overall:          7.98
+  Relevance:        8.20
+  Completeness:     8.40
+  Accuracy:         7.90
+  Clarity:          8.30
+  Citation Quality: 7.10
+
+
+
+PROMPT: Technical - Developer-Focused
+================================================================================
+
+Aggregate Scores:
+  Overall:          8.45
+  Relevance:        8.70
+  Completeness:     8.60
+  Accuracy:         8.90
+  Clarity:          8.50
+  Citation Quality: 7.60
+
