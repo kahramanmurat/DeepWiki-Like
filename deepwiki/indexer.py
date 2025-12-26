@@ -190,7 +190,7 @@ class VectorIndexer:
                 # Prepare batch data
                 texts = [chunk["text"] for chunk in batch]
                 metadatas = [chunk["metadata"] for chunk in batch]
-                ids = [f"{chunk['metadata']['repo_name']}::{chunk['metadata']['file_path']}::{total_chunks + i}"
+                ids = [f"{batch[i]['metadata']['repo_name']}::{batch[i]['metadata']['file_path']}::{total_chunks + i}"
                        for i in range(len(batch))]
 
                 print(f"    Generating embeddings for {len(batch)} chunks...")
