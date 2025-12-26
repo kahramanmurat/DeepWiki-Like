@@ -59,39 +59,54 @@ async def root():
 
 def index_in_background(repo_url: str, is_local: bool = False):
     """Background task to index a repository."""
+    import traceback
+
     try:
+        print(f"[INDEXING] Starting background indexing for {repo_url}")
         indexing_status["in_progress"] = True
         indexing_status["current_repo"] = repo_url
         indexing_status["status"] = "crawling"
         indexing_status["message"] = f"Crawling repository: {repo_url}"
 
         # Crawl repository
+        print("[INDEXING] Initializing crawler...")
         crawler = GitHubCrawler()
+
+        print(f"[INDEXING] Crawling {'local' if is_local else 'remote'} repository...")
         if is_local:
             documents = crawler.crawl_local(repo_url)
         else:
             documents = crawler.crawl(repo_url)
 
+        print(f"[INDEXING] Found {len(documents) if documents else 0} documents")
+
         if not documents:
             indexing_status["status"] = "error"
             indexing_status["message"] = "No Markdown files found"
             indexing_status["in_progress"] = False
+            print("[INDEXING] No documents found, aborting")
             return
 
         indexing_status["status"] = "indexing"
         indexing_status["message"] = f"Indexing {len(documents)} files..."
+        print(f"[INDEXING] Starting to index {len(documents)} documents...")
 
         # Index documents
         indexer = VectorIndexer()
+        print("[INDEXING] Calling indexer.index_documents...")
         chunk_count = indexer.index_documents(documents)
 
         indexing_status["status"] = "completed"
         indexing_status["message"] = f"Successfully indexed {len(documents)} files ({chunk_count} chunks)"
         indexing_status["in_progress"] = False
+        print(f"[INDEXING] Completed! {chunk_count} chunks indexed")
 
     except Exception as e:
+        error_trace = traceback.format_exc()
+        print(f"[INDEXING ERROR] {str(e)}")
+        print(f"[INDEXING ERROR] Traceback:\n{error_trace}")
         indexing_status["status"] = "error"
-        indexing_status["message"] = str(e)
+        indexing_status["message"] = f"{str(e)[:200]}"  # Truncate long errors
         indexing_status["in_progress"] = False
 
 
