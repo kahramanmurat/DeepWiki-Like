@@ -1,7 +1,8 @@
 """FastAPI web server for DeepWiki-Like."""
 
 from typing import List, Optional
-from fastapi import FastAPI, HTTPException
+import asyncio
+from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
@@ -10,6 +11,14 @@ from .indexer import VectorIndexer
 from .qa import QuestionAnswering
 
 app = FastAPI(title="DeepWiki-Like", description="Index and query GitHub repository documentation")
+
+# Track indexing status
+indexing_status = {
+    "in_progress": False,
+    "current_repo": None,
+    "status": "idle",
+    "message": ""
+}
 
 
 class IndexRequest(BaseModel):
@@ -48,32 +57,67 @@ async def root():
     return HTMLResponse(content=get_html_ui())
 
 
-@app.post("/api/index")
-async def index_repository(request: IndexRequest):
-    """Index a GitHub repository."""
+def index_in_background(repo_url: str, is_local: bool = False):
+    """Background task to index a repository."""
     try:
+        indexing_status["in_progress"] = True
+        indexing_status["current_repo"] = repo_url
+        indexing_status["status"] = "crawling"
+        indexing_status["message"] = f"Crawling repository: {repo_url}"
+
         # Crawl repository
         crawler = GitHubCrawler()
-        if request.is_local:
-            documents = crawler.crawl_local(request.repo_url)
+        if is_local:
+            documents = crawler.crawl_local(repo_url)
         else:
-            documents = crawler.crawl(request.repo_url)
+            documents = crawler.crawl(repo_url)
 
         if not documents:
-            raise HTTPException(status_code=404, detail="No Markdown files found")
+            indexing_status["status"] = "error"
+            indexing_status["message"] = "No Markdown files found"
+            indexing_status["in_progress"] = False
+            return
+
+        indexing_status["status"] = "indexing"
+        indexing_status["message"] = f"Indexing {len(documents)} files..."
 
         # Index documents
         indexer = VectorIndexer()
         chunk_count = indexer.index_documents(documents)
 
-        return {
-            "success": True,
-            "message": f"Indexed {len(documents)} files ({chunk_count} chunks)",
-            "file_count": len(documents),
-            "chunk_count": chunk_count,
-        }
+        indexing_status["status"] = "completed"
+        indexing_status["message"] = f"Successfully indexed {len(documents)} files ({chunk_count} chunks)"
+        indexing_status["in_progress"] = False
+
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        indexing_status["status"] = "error"
+        indexing_status["message"] = str(e)
+        indexing_status["in_progress"] = False
+
+
+@app.post("/api/index")
+async def index_repository(request: IndexRequest, background_tasks: BackgroundTasks):
+    """Index a GitHub repository (runs in background)."""
+    if indexing_status["in_progress"]:
+        raise HTTPException(
+            status_code=409,
+            detail=f"Indexing already in progress for {indexing_status['current_repo']}"
+        )
+
+    # Start indexing in background
+    background_tasks.add_task(index_in_background, request.repo_url, request.is_local)
+
+    return {
+        "success": True,
+        "message": f"Started indexing {request.repo_url}. Check /api/index/status for progress.",
+        "status": "started"
+    }
+
+
+@app.get("/api/index/status")
+async def get_index_status():
+    """Get the current indexing status."""
+    return indexing_status
 
 
 @app.post("/api/ask", response_model=AnswerResponse)
@@ -413,7 +457,7 @@ def get_html_ui() -> str:
             }
 
             const container = document.getElementById('index-message');
-            container.innerHTML = '<div class="loading">Indexing repository...</div>';
+            container.innerHTML = '<div class="loading">Starting indexing...</div>';
 
             try {
                 const response = await fetch('/api/index', {
@@ -422,13 +466,47 @@ def get_html_ui() -> str:
                     body: JSON.stringify({repo_url: repoUrl})
                 });
 
-                if (!response.ok) throw new Error('Failed to index repository');
+                if (!response.ok) {
+                    const error = await response.json();
+                    throw new Error(error.detail || 'Failed to start indexing');
+                }
 
                 const data = await response.json();
                 container.innerHTML = '<div class="message success">' + data.message + '</div>';
+
+                // Start polling for status
+                pollIndexStatus(container);
             } catch (error) {
                 container.innerHTML = '<div class="message error">Error: ' + error.message + '</div>';
             }
+        }
+
+        async function pollIndexStatus(container) {
+            const interval = setInterval(async () => {
+                try {
+                    const response = await fetch('/api/index/status');
+                    const status = await response.json();
+
+                    let html = '<div class="message">';
+                    html += '<strong>Status:</strong> ' + status.status + '<br>';
+                    html += '<strong>Message:</strong> ' + status.message;
+                    html += '</div>';
+
+                    if (status.status === 'completed') {
+                        html = '<div class="message success">' + status.message + '</div>';
+                        container.innerHTML = html;
+                        clearInterval(interval);
+                    } else if (status.status === 'error') {
+                        html = '<div class="message error">Error: ' + status.message + '</div>';
+                        container.innerHTML = html;
+                        clearInterval(interval);
+                    } else {
+                        container.innerHTML = html;
+                    }
+                } catch (error) {
+                    console.error('Error polling status:', error);
+                }
+            }, 2000); // Poll every 2 seconds
         }
 
         async function loadStats() {
